@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+
+    header {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        padding: 4rem;
+        background-color: transparent; 
+        align-items: center;
+
+        .header-photo {
+            width: 500px;
+            position: relative;
+
+
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                text-align: center;
+                position: absolute;
+                bottom: 1rem;
+                width: 100%;
+                color: white;
+                font-size: 2rem;
+            }
+        }
+
+    }
+    
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(138, 138, 209);
+        transform: skewY(-10deg); 
+        z-index: -1;
+        transform-origin: top left;
+    }
+
+    .about-me {
+        background: white;
+        box-shadow: 0 0 4px gray;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        p {
+            line-height: 1.5rem;
+        }
+
+        .socials-container {
+            display: flex;
+            margin-left: auto;
+            gap: 1rem;
+        }
+    }
+}
